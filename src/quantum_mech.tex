@@ -1,0 +1,209 @@
+\section{Quantum Mechanics}
+
+This section goes well beyond what is necessary for the PGRE.
+Focus mainly on energy levels and probability as these are common themes on all the practice tests.
+Perturbation theory is usually just one question but is typically straightforward.
+Singlet and triplet spin states come up from time to time as well.
+Again, any of this (and more) could be on the exam, but it would be unusual for some of the more advanced material to be there.\\*
+
+\subsection{The Schr\"odinger Equation}
+
+\subsubsection{Time-Dependent}
+\(i\hbar\dot{\Psi}=H\Psi\)\\*
+Solution: \(\Psi(\mathbf{r},t)=\Psi(\mathbf{r},0)e^{-iHt/\hbar}\)
+
+\subsubsection{Time-Independent}
+\(H\psi_n=E_n\psi_n\)\\*
+Solution: \(\displaystyle\Psi(\mathbf{r},t)=\sum_{n=1}^{m}c_n\psi_n(\mathbf{r},0)e^{-iE_nt/\hbar}\) (\(m\) can go to \(\infty\))\\\\*
+These eigenfunctions (\(\psi_n\)) are called stationary states.
+Every expectation value is constant in time. (i.e. \(\langle\hat{p}\rangle=0\) because \(\langle \hat{x}\rangle=\mathrm{const.}\))
+
+\subsubsection{Boundary Conditions}
+\(\Psi\) and \(\nabla\Psi\) are both continuous.\\*
+If \(V(\mathbf{r}_0)\to\pm\infty\) then only \(\Psi\) is continuous at \(\mathbf{r}_0\).
+
+\subsubsection{Normalization}
+\(\int_{-\infty}^{\infty}|\Psi(\mathbf{r},t)|^2\,\mathrm{d}\mathbf{r}=1\)
+
+\subsection{General Information}
+
+\subsubsection{de Broglie Wavelength}
+For any particle: \(\displaystyle\lambda=\frac{h}{p}\to p=\hbar k\)
+
+\subsubsection{Energy of a Photon}
+\(E=h\nu=\frac{hc}{\lambda}\)
+
+\subsubsection{Operators}
+Any operator can be decomposed into Hermitian and anti-Hermitian parts:\\*
+\(\displaystyle \Omega=\frac{\Omega+\Omega^{\dag}}{2}+\frac{\Omega-\Omega^{\dag}}{2}\)\\\\*
+In the \(x\) basis:
+\begin{itemize}
+\item \(\hat{x}=x\)
+\item \(\hat{p}=-i\hbar\frac{\partial}{\partial x}\)
+\end{itemize}
+\(\hat{L}_z=-i\hbar\frac{\partial}{\partial\phi}\)\\\\*
+In the \(p\) basis:
+\begin{itemize}
+\item \(\hat{x}=i\hbar\frac{\partial}{\partial p}\)
+\item \(\hat{p}=p\)
+\end{itemize}
+
+\subsubsection{Change of Basis}
+\(x\) basis: \(\displaystyle\Psi(x,t)=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}e^{ipx/\hbar}\Phi(p,t)\,\mathrm{d}p\)\\\\*
+\(p\) basis: \(\displaystyle\Phi(p,t)=\frac{1}{\sqrt{2\pi\hbar}}\int_{-\infty}^{\infty}e^{-ipx/\hbar}\Psi(x,t)\,\mathrm{d}x\)
+
+\subsubsection{Commutation Relations}
+\([A,B]=AB-BA\)\\*
+\([A,B]_+=AB+BA\)\\*
+\([AB,C]=A[B,C]+[A,C]B\)\\\\*
+\([\hat{x},\hat{p}]=i\hbar\)\\*
+\(\displaystyle [f(\hat{x}),\hat{p}]=i\hbar\frac{\mathrm{d}f}{\mathrm{d}x}\)\\*
+\([\hat{L}_i,\hat{L}_j]=\epsilon_{ijk}i\hbar\hat{L}_k\)\\*
+\([\hat{L}^2,\hat{L}_i]=0\)\\*
+\([H,\hat{L}_i]=[H,\hat{L}^2]=0\)
+
+\subsubsection{Uncertainty Principle}
+Standard Deviation: \(\sigma_A=\sqrt{\langle A^2\rangle-\langle A\rangle^2}\)\\\\*
+\(\sigma_A\sigma_B \geq \frac{1}{2}|\langle[A,B]\rangle|\)\\\\*
+Common uncertainties:\\*
+\(\sigma_x\sigma_p\geq\frac{\hbar}{2}\)\\*
+\(\sigma_E\sigma_t\geq\frac{\hbar}{2}\)\\*
+\(\sigma_{L_x}\sigma_{L_y}\geq\frac{\hbar}{2}|\langle L_z\rangle|\)
+
+\subsubsection{Ehrenfest's Theorem}
+\(\displaystyle \frac{\mathrm{d}}{\mathrm{d}t}\langle\hat{Q}\rangle=\frac{i}{\hbar}\langle[H,\hat{Q}]\rangle+\left<\frac{\partial \hat{Q}}{\partial t}\right>\)\\\\*
+Uses:\\*
+\(\displaystyle \frac{\mathrm{d}}{\mathrm{d}t}\langle\mathbf{p}\rangle=\langle-\nabla V\rangle\)\\*
+\(\displaystyle \frac{\mathrm{d}}{\mathrm{d}t}\langle\mathbf{L}\rangle=\langle\mathbf{r}\times(-\nabla V)\rangle\)
+\newpage
+\subsubsection{Probability}
+Probability Density: \(\int_{-\infty}^{\infty} P(\mathbf{r})\,\mathrm{d}\mathbf{r}=\int_{-\infty}^{\infty} |\Psi(\mathbf{r})|^2\,\mathrm{d}\mathbf{r}\)\\*
+Most Probable Value of \(r\): set \(\frac{\mathrm{d}}{\mathrm{d}r}|\psi(r)|^2r^2=0\), then solve for \(r\) (the \(r^2\) comes from \(\mathrm{d}\mathbf{r} = r^2\sin(\theta)\mathrm{d}r\mathrm{d}\theta\mathrm{d}\phi\))\\\\*
+Probability Current: \(\displaystyle J(x,t)=\frac{i\hbar}{2m}\left(\psi\frac{\partial\psi^*}{\partial x}-\psi^*\frac{\partial\psi}{\partial x}\right)\)\\*
+Probability of finding a particle in the range \(a<x<b\) at time \(t\): \(\displaystyle\frac{\mathrm{d}P_{ab}}{\mathrm{d}t}=J(a,t)-J(b,t)\)\\\\*
+\(\displaystyle\langle H\rangle=\sum_{n=1}^{m}|c_n|^2E_n\)\\*
+(same \(c_n\) as in \(\displaystyle\sum_{n=1}^{m}c_n\psi_n(\mathbf{r},0)e^{-iE_nt/\hbar}\))\\*
+\(|c_n|^2\) tells you the probability that a measurement of the energy would yield the value \(E_n\).\\*
+\(\displaystyle\sum_{n=1}^{m}|c_n|^2=1\)
+
+\subsection{Common Solved Problems}
+Be sure to study how each of these solutions look like when they are plotted (especially the first two).
+Specifically, focus on how many ``nodes'' each eigenfunction has and where they are located.
+When an infinite barrier is introduced to a potential only eigenfunctions with a ``node'' at that barrier survive (think ``wave on a string'').
+
+\subsubsection{Infinite Square Well}
+Potential: \[V(x) = \left\{
+\begin{array}{l l}
+  0 & \quad \mbox{\(0<x<a\)}\\
+  \infty & \quad \mbox{otherwise}\\ \end{array} \right. \]
+Eigenfunctions: \(\psi_n(x)=\sqrt{\frac{2}{a}}\sin(k_nx)\) where \(k_n=\frac{n\pi}{a}\), \(n=1,2,3,\ldots\)\\*
+Energy Levels: \(\displaystyle E_n=\frac{\hbar^2k_n^2}{2m}=\frac{\hbar^2\pi^2}{2ma^2}n^2\)
+
+\subsubsection{Harmonic Oscillator}
+Potential: \(V(x)=\frac{1}{2}m\omega^2x^2\)\\*
+Eigenfunctions: \(\psi_n(x)=\frac{1}{\sqrt{n!}}(a_+)^n\psi_0\) where \(a_+\) is the raising operator and\\*
+\(\displaystyle\psi_0(x)=\left(\frac{m\omega}{\pi\hbar}\right)^{1/4}e^{-\frac{m\omega}{2\hbar}x^2}\)\\*
+Energy Levels: \(\displaystyle\hbar\omega\left(n+\frac{1}{2}\right)\),  \(n=0,1,2,\ldots\)\\\\*
+Raising and Lowering Operators: \(a_{\pm}=\frac{1}{\sqrt{2\hbar m\omega}}(\pm ip+m\omega x)\)\\*
+\([a_-,a_+]=1\)\\*
+\(H=\hbar\omega\left(a_-a_+-\frac{1}{2}\right)=\hbar\omega\left(a_+a_-+\frac{1}{2}\right)\)\\*
+\(a_+\psi_n=\sqrt{n+1}\psi_{n+1}\)\\*
+\(a_-\psi_n=\sqrt{n}\psi_{n-1}\)\\*
+\(a_-a_+\psi_n=(n+1)\psi_{n}\)\\*
+\(a_+a_-\psi_n=n\psi_{n}\)\\*
+of course, \(a_-\psi_0=0\) and \(a_+\psi_{n_{highest}}=0\)
+
+\subsubsection{Free Particle}
+Potential: \(V(x)=0\)\\*
+\(v_{classical}=v_{group}=2v_{phase}\)\\\\*
+\(\displaystyle\Psi(x,t)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\phi(k)e^{i(kx-\frac{\hbar k^2}{2m}t)}\,\mathrm{d}k\)\\*
+where \(\displaystyle\phi(k)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\Psi(x,0)e^{-ikx}\,\mathrm{d}x\)
+
+\subsubsection{Delta-Function Potential}
+Potential: \(V(x)=-\alpha\delta(x)\)\\*
+Eigenfunction: \(\displaystyle\psi(x)=\frac{\sqrt{m\alpha}}{\hbar}e^{-m\alpha|x|/\hbar^2}\)\\*
+Only One Bound State Energy: \(\displaystyle E_0=-\frac{m\alpha^2}{2\hbar^2}\)\\\\*
+Reflection \& Transmission Coefficients:\\\\*
+\(R+T=1\)\\\\*
+\(\displaystyle R=\frac{1}{1+(E/|E_0|)}\)\\*
+\(\displaystyle T=\frac{1}{1+(|E_0|/E)}\)
+
+\subsubsection{Finite Square Well}
+Potential: \[V(x) = \left\{
+\begin{array}{l l}
+  -V_0 & \quad \mbox{\(-a<x<a\)}\\
+  0 & \quad \mbox{otherwise}\\ \end{array} \right. \]
+With a wide, deep well the energies approach those of an infinite square well.\\*
+\(\displaystyle E_n+V_0=\frac{\hbar^2k_n^2}{2m}\)\\\\*
+With a shallow, narrow well there will always be at least one bound state no matter how weak the well is.
+\newpage
+\subsubsection{Hydrogen Atom}
+Potential: \(\displaystyle V(r)=-\frac{e^2}{4\pi\epsilon_0}\frac{1}{r}\)\\*
+The eigenfunctions (\(\psi_{nlm_l}(r,\theta,\phi)\)) are complicated and involve Laguerre polynomials and the spherical harmonics.
+However, the ground state of the hydrogen atom is easy to remember.\\*
+\(\displaystyle\psi_{100}(r)=\frac{1}{\sqrt{\pi a^3}}e^{-r/a}\) where \(a\) is the Bohr radius (\(a\approx .53\mathrm{\text{\AA}}\))\\*
+Energy Levels: \(\displaystyle E_n=-\frac{E_1}{n^2}\) where \(E_1\approx 13.6\mathrm{eV}\)\\*
+It is important to know that \(E_1\propto m_eZ_1^2Z_2^2\) where \(m_e\) is the mass of the orbiting body (electron), \(Z_1\) is the charge of the orbiting body (in units of electron charge), and \(Z_2\) is the charge of the central body (nucleus).\\\\*
+ETS frequently makes you alter the energy level formula for positronium and helium.
+Just replace \(m_e\) in \(E_1\) with the reduced mass \(\mu=\frac{m_e}{2}\) for positronium.
+For helium, just remember \(Z_2\to 2\).
+
+\subsection{Angular Momentum}
+Orbital: \(\mathbf{L}\times\mathbf{L}=i\hbar\mathbf{L}\) (or \([\hat{L}_i,\hat{L}_j]=\epsilon_{ijk}i\hbar\hat{L}_k\))\\*
+This means that one cannot have a completely determined angular momentum \emph{vector} just as one cannot completely determine both position and momentum.\\\\*
+Spin: \(\mathbf{S}=\frac{\hbar}{2}\vec{\sigma}\)\\\\*
+Pauli matrices: \(\sigma_x= \left[\!
+  \begin{array}{ c c }
+     0 & 1 \\
+     1 & 0
+  \end{array} \!\right]
+\),
+\(\sigma_y= \left[\!
+  \begin{array}{ c c }
+     0 & -i \\
+     i & 0
+  \end{array} \!\right]
+\),
+\(\sigma_z= \left[\!
+  \begin{array}{ c c }
+     1 & 0 \\
+     0 & -1
+  \end{array} \!\right]
+\)\\\\*
+It is convenient to express spin in terms of up/down vectors:\\*
+Up: \(|\!\uparrow\rangle=\left[\!\begin{array}{c}1 \\ 0 \end{array}\!\right]\)\\*
+Down: \(|\!\downarrow\rangle=\left[\!\begin{array}{c}0 \\ 1 \end{array}\!\right]\)\\*
+\(\mathbf{S}\times\mathbf{S}=i\hbar\mathbf{S}\)\\\\*
+Total: \(\mathbf{J}=\mathbf{L}+\mathbf{S}\)\\*
+\(\mathbf{J}\times\mathbf{J}=i\hbar\mathbf{J}\)
+
+\subsubsection{Raising and Lowering Operators}
+\(\hat{L}_\pm=\hat{L}_x\pm i\hat{L}_y\)\\*
+\([\hat{L}_z,\hat{L}_\pm]=\pm\hbar\hat{L}_\pm\)
+
+\subsubsection{Eigenvalues}
+\(\hat{L}^2|lm_l\rangle=l(l+1)\hbar^2|lm_l\rangle\), \(l=0,1,2,\ldots,n\)\\*
+\(\hat{L}_z|lm_l\rangle=m_l\hbar|lm_l\rangle\), \(m_l=-l,-l+1,\ldots,0,\ldots,l-1,l\)\\*
+\(\hat{L}_\pm|lm_l\rangle=A_l^{m_l}\hbar^2|l(m_l\pm 1)\rangle\)\\\\*
+\(\hat{S}^2|sm_s\rangle=s(s+1)\hbar^2|sm_s\rangle\), \(s=0,1,2,\ldots\)\\*
+\(\hat{S}_z|sm_s\rangle=m_s\hbar|sm_s\rangle\), \(m_s=-s,-s+1,\ldots,0,\ldots,s-1,s\)
+
+\subsubsection{Addition of Angular Momentum}
+\(s=1\) (triplet states):\\*
+\(|11\rangle =\) \( \uparrow\uparrow\)\\*
+\(|10\rangle =\) \(\frac{1}{\sqrt{2}}(\uparrow\downarrow+\downarrow\uparrow)\)\\*
+\(|1(-1)\rangle =\) \(\downarrow\downarrow\)\\\\*
+\(s=0\), \(m_s=0\) (singlet state):\\*
+\(|00\rangle =\) \(\frac{1}{\sqrt{2}}(\uparrow\downarrow-\downarrow\uparrow)\)
+
+\subsection{Time-Independent Perturbation Theory}
+\(H=H_0+\lambda\Delta H\) where \(H_0\) is a solvable Hamiltonian with basis functions \(|n^{(0)}\rangle\)\\*
+\(E_n=E_n^{(0)}+\lambda E_n^{(1)}+\ldots\)\\*
+\(|n\rangle=|n^{(0)}\rangle+\lambda |n^{(1)}\rangle+\ldots\)
+
+\subsubsection{First-Order Energy Correction}
+\(E_n^{(1)}=\langle n^{(0)}|\Delta H|n^{(0)}\rangle\)
+
+\subsubsection{First-Order Eigenfunction Correction}
+\(\displaystyle |n^{(1)}\rangle=\sum_{k\neq n}\frac{\langle k^{(0)}|\Delta H|n^{(0)}\rangle}{E_n^{(0)}-E_k^{(0)}}|k^{(0)}\rangle\)\\*
+The key point of this equation is \(\langle k^{(0)}|\Delta H|n^{(0)}\rangle\), which determines what new eigenfunctions will be zero (typically using even/odd symmetry arguments).

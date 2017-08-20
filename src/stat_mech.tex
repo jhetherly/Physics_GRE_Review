@@ -1,0 +1,123 @@
+\section{Statistical Mechanics}
+This is a brief summary of statistical mechanics for the PGRE and covers the bare essentials of this topic.
+Most of the subtopics here are frequently tested, but the section over solids is mostly to get a qualitative understanding of energy levels and so on.
+The most important topic, I feel, is the canonical ensemble and its partition function.
+Again, it's a good idea to flesh out this section with your own graphs and diagrams.
+
+\subsection{Theorem of Equipartition of Energy}
+Each degree of freedom which contributes a quadratic term to the total energy has an average energy \(\frac{1}{2}k_BT\) and contributes \(\frac{k_B}{2}\) to the heat capacity (at constant volume, \(C_V\))\\\\*
+For diatomic molecule:\\*
+3 translational degrees of freedom: \(H_{trans}=\frac{1}{2}m\left(\dot{x}^2+\dot{y}^2+\dot{z}^2\right)\)\\*
+2 vibrational degrees of freedom: \(H_{vib}=\frac{1}{2}m\left(\dot{x}^2+\omega^2x^2\right)\)\\*
+2 rotational degrees of freedom: \(H_{rot}=\frac{1}{2}I\left(\omega_1^2+\omega_2^2\right)\) (other rotational axis has extremely small moment of inertia)\\*
+Total degrees of freedom: 7
+
+\subsection{Gases}
+
+\subsubsection{Maxwell-Boltzmann Speed Distribution Function}
+\(\displaystyle N_v=4\pi N\left(\frac{mv^2}{2\pi k_BT}\right)^{3/2}e^{-mv^2/2k_BT}\)
+
+\subsubsection{Velocities}
+Root-Mean Square velocity:\\*
+\(\displaystyle K_{trans}=\frac{1}{2}mv_{rms}^2=\frac{3}{2}k_BT\rightarrow v_{rms}=\sqrt{\frac{3k_BT}{m}}\)\\\\*
+Average Speed:\\*
+\(\displaystyle \bar{v}=\sqrt{\frac{8k_BT}{\pi m}}\)\\\\*
+Most Probable Speed:\\*
+\(\displaystyle v_{mp}=\sqrt{\frac{2k_BT}{m}}\)\\\\*
+Relationship Between Speeds:\\*
+\(v_{rms}>\bar{v}>v_{mp}\)
+
+\subsection{Radiation}
+\subsubsection{Stefan's Law}
+\(P=\sigma A e T^4\), where \(P\) is power,  \(A\) is the surface area, and \(e\) is the emissivity (the fraction of incoming radiation that the surface absorbs)\\*
+If the surroundings are at \(T_0\) then \(P=\sigma A e (T^4-T_0^4)\)
+
+\subsubsection{Blackbody Radiation}
+\(e=1 \rightarrow P=\sigma A T^4\)\\*
+Wien's displacement law: \(\lambda_{max} T\approx.003(mK)\), where \(\lambda_{max}\) is the maximum wavelength of light emitted from a blackbody at temperature \(T\)
+
+\subsubsection{Ideal Reflector}
+\(e=0\rightarrow P=0\)
+
+\subsection{The Canonical \& Grand Canonical Ensembles}
+
+\subsubsection{The Canonical Ensemble}
+Partition function: \(\displaystyle Z=\sum_i{g_ie^{-E_i/k_BT}}\), where \(g_i\) is the degeneracy of state \(i\)\\*
+Probability of system to be in state \(i\): \(\displaystyle p_i=\frac{g_ie^{-E_i/k_BT}}{Z}\)\\*
+Ratio of probabilities: \(\displaystyle \frac{p_i}{p_j}=\frac{g_i}{g_j}e^{-(E_i-E_j)/k_BT}\)\\*
+Entropy: \(\displaystyle S=-k_B\sum_i{p_i\ln{p_i}}\)\\*
+Helmholtz free energy: \(F=-k_BT\ln{Z}\)\\*
+Entropy from free energy: \(\displaystyle S=-\left(\frac{\partial F}{\partial T}\right)_V=k_B\ln{Z}+k_BT\frac{\partial\ln{Z}}{\partial T}\)\\*
+Average internal energy: \(\displaystyle \bar{U}=\sum_i{p_iE_i}=k_BT^2\left(\frac{\partial\ln{Z}}{\partial T}\right)_V=k_B\frac{T^2}{Z}\left(\frac{\partial Z}{\partial T}\right)_V\)
+
+\subsubsection{The Grand Canonical Ensemble}
+Grand partition function: \(\displaystyle \Xi=\sum_i{g_ie^{-(E_i-\mu N_i)/k_BT}}\)\\*
+Probability of system to be in state \(i\): \(\displaystyle p_i=\frac{g_ie^{-(\epsilon_i-\mu)/k_BT}}{\Xi}\)\\*
+Grand potential: \(\Phi_G=-k_BT\ln{\Xi}=\bar{U}-\mu\bar{N}-TS\)\\*
+Thermodynamic quantities:\\*
+\(\displaystyle S=-\left(\frac{\partial\Phi_G}{\partial T}\right)_{V,\mu}\), \(\displaystyle P=-\left(\frac{\partial\Phi_G}{\partial V}\right)_{T,\mu}\), and \(\displaystyle \bar{N}=-\left(\frac{\partial\Phi_G}{\partial \mu}\right)_{V,T}\)
+
+\subsection{Number Density}
+\(\displaystyle n_V(E)=n_0e^{\frac{-E}{k_BT}}\)
+
+\subsection{Symmetry and Statistics}
+If a system starts in a symmetric/anti-symmetric state it must stay in a symmetric/anti-symmetric state.
+
+\subsubsection{Symmetric State}
+\(\psi(x_1,x_2)=\psi(x_2,x_1)\)\\\\*
+Bosons are symmetric (photons, mesons, \(^4\)He).\\*
+e.g.: \(\psi_{Bose}(x_1,x_2)=\phi_i(x_1)\phi_j(x_2)+\phi_i(x_2)\phi_j(x_1)\)\\\\*
+%
+Bose-Einstein distribution function:\\*
+Distribution function: \(\displaystyle f(k)=\frac{1}{e^{(\epsilon(k)-\mu)/k_BT}-1}\), where \(\epsilon(k)-\mu>0\)
+
+\subsubsection{Anti-Symmetric State}
+\(\psi(x_1,x_2)=-\psi(x_2,x_1)\)\\\\*
+Fermions are anti-symmetric (electrons, neutrinos, protons, \(^3\)He).\\*
+e.g.: \(\psi_{Fermi}(x_1,x_2)=\phi_i(x_1)\phi_j(x_2)-\phi_i(x_2)\phi_j(x_1)\)\\\\*
+%
+Fermi-Dirac distribution function:\\*
+\(\displaystyle\epsilon(k)=\frac{\hbar^2k^2}{2m}\)\\*
+Distribution function: \(\displaystyle n(k)=\frac{1}{e^{(\epsilon(k)-\mu)/k_BT}+1}\)\\*
+At high temperatures this reverts back to a Boltzmann distribution: \(\displaystyle n(k)\rightarrow e^{-(\epsilon(k)-\mu)/k_BT}\)\\*
+At low temperatures \(n(k)\rightarrow1\)
+%
+\subsubsection{Fermi Gas}
+\(n=\frac{\bar{N}}{V}\)\\*
+Fermi wave number: \(k_F=\left(3\pi^2n\right)^{1/3}\)\\*
+Fermi energy: \(\displaystyle E_F=\frac{\hbar^2k_F^2}{2m}\)\\*
+Fermi temperature: \(\displaystyle T_F=\frac{E_F}{k_B}\)\\*
+Fermi velocity: \(\displaystyle v_F=\frac{\hbar k_F}{m}\)\\\\*
+%
+In the high temperature limit: \(P=nk_BT\)\\\\*
+When \(T>T_F\), \(\displaystyle n(k)\rightarrow e^{-(\epsilon(k)-\mu)/k_BT}\)\\*
+When \(T\ll T_F\), one can assume the system is in its ground state; all electrons have energies less than or equal to the Fermi energy\\*
+At \(T=0\): \(\displaystyle P=\frac{2nE_F}{5}\) and \(\displaystyle \bar{U}=\frac{3E_F}{5}\)\\*
+At low \(T\): \(\displaystyle C_V=\frac{Nk_BT^2}{2}\left(\frac{k_BT}{E_F}\right)\)\\\\*
+%
+Review what these different distributions look like and their relationships between each other.
+
+\subsection{Statistical Models of Solids}
+
+\subsubsection{Basics}
+Energy levels in a solid form a band structure.\\*
+Review energy level diagrams for metals, insulators, and semiconductors\\\\*
+\(n\)-type semiconductors: impurity atoms are \emph{donors} of electrons\\*
+\(p\)-type semiconductors: impurity atoms are \emph{acceptors} of electrons\\*
+Review energy level diagrams for \(n\) and \(p\)-type semiconductors\\\\*
+Effective electron mass: \(\displaystyle m^*=\frac{\hbar^2}{\left(\frac{\mathrm{d}^2E}{\mathrm{d}k^2}\right)}\)
+
+\subsubsection{Einstein's Model of Vibrations in a Solid}
+Atoms are treated as SHO's.\\*
+Every atom oscillates at the same frequency (Einstein frequency \(\omega_E\)).\\\\*
+\(\displaystyle C_V=3Nk_B\left(\frac{\hbar\omega_E}{k_BT}\right)^2\frac{e^{\hbar\omega_E/k_BT}}{\left(e^{\hbar\omega_E/k_BT}-1\right)^2}\)\\\\*
+when \(k_BT\gg\hbar\omega_E\rightarrow C_V=3Nk_B\)
+
+\subsubsection{Debye's Model}
+Atoms are treated as SHO's.\\*
+Atoms oscillate within a range frequencies.\\\\*
+Developed by considering the speed of sound in a material: \(\displaystyle \frac{3}{\bar{s}^3}=\frac{1}{\bar{s}_L^3}+\frac{2}{\bar{s}_T^3}\)\\*
+\(\bar{s}\) is the average speed of sound, \(L\) means longitudinal, and \(T\) means traverse\\*
+Debye frequency: \(\displaystyle\omega_D=\bar{s}\left(\frac{6\pi^2N}{V}\right)^{1/3}\)\\*
+Debye energy: \(E_D=\hbar\omega_D\)\\\\*
+\(\displaystyle C_V=\frac{2\pi^2k_B^4T^3V}{5\hbar^3\bar{s}^3}\)

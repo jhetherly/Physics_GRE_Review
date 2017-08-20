@@ -1,0 +1,151 @@
+\section{Thermodynamics}
+This section contains most of the information necessary for the thermodynamic questions on the test.
+Several of these concepts are difficult to understand without solid qualitative knowledge of these topics gleaned from looking at diagrams and graphs.
+Hence, one should add several graphs of your own to this section.
+Also, \(P-V\) diagrams and efficiency are very important to understand as the PGRE typically has a few questions on these topics.
+
+\subsection{Zeroth Law of Thermodynamics}
+If systems \(A\) and \(B\) are separately in thermal equilibrium with a third system \(C\), then \(A\) and \(B\) are in thermal equilibrium with each other.
+
+\subsubsection{Temperature Conversion}
+\(T_{K}=T\)\\*
+\(T_{C}=T-273.15\)\\*
+\(T_{F}=\frac{9}{5}T_{C}+32\)\\*
+\(\Delta T=\Delta T_{C}=\frac{5}{9}\Delta T_{F}\)
+
+\subsection{First Law of Thermodynamics}
+\(\displaystyle\delta U=\delta Q-\delta W_{by}\)\\*
+The change in internal energy, \(\delta U\), of a system is equal to the heat, \(\delta Q\), added to the system minus the work, \(\delta W_{by}\), done \emph{by} the system.
+Noting that heat is the transfer of energy, this is simply a statement of conservation of energy.
+
+\subsubsection{Heat}
+Defined as the transfer of energy across the boundary of a system due to a temperature difference between the system and its surroundings.
+
+\subsubsection{Quasi-Static Change}
+A change such that the change occurs slowly enough to allow the system to remain essentially in thermal equilibrium at all times.
+
+\subsubsection{Thermal Expansion}
+A cavity in a piece of material expands in the same way as if the cavity were filled with the material.\\*
+For linear expension (\(L\) is length and \(V\) is volume):\\*
+\(\displaystyle \Delta L=\alpha L_{i}\Delta T\)\\*
+\(\displaystyle \Delta V=\beta V_{i}\Delta T\)
+\newpage
+\subsubsection{Thermal Conduction}
+Power transfered: \(\displaystyle P=kA\left|\frac{\mathrm{d}T}{\mathrm{d}x}\right|\)\\*
+\(k\) is the thermal conductivity of the material, \(A\) is the cross-sectional area, and \(\left|\frac{\mathrm{d}T}{\mathrm{d}x}\right|\) is the temperature gradient.\\*
+For a compound slab containing several materials of thickness \(L_1, L_2,\) \ldots and thermal conductivities \(k_1, k_2,\) \ldots the rate of energy transfer through the slab at steady state is\\*
+\(\displaystyle P=\frac{A(T_{hot}-T_{cold})}{\sum_{i}{L_i/k_i}}=\frac{A(T_{hot}-T_{cold})}{\sum_{i}{R_i}}\), where \(\displaystyle R_i=\frac{L_i}{k_i}\)
+
+\subsubsection{Ideal Gas}
+Number of moles: \(\displaystyle n=\frac{m}{M}\), where \(m\) is the mass and \(M\) is the molar mass of the gas\\*
+Avogadro's number: \(\displaystyle N_{A}\approx6\times10^{23}(mol^{-1})\)\\*
+Boltzmann constant:  \(\displaystyle k_{B} \approx 1.4\times10^{-23}  (J/K)\)\\*
+Gas constant:  \(\displaystyle R=k_{B}N_{A} \approx 8.3 (J/K mol)\)\\\\*
+Ideal gas law: \(\displaystyle PV=nRT=Nk_{B}T \), where \(P\) is the pressure of the gas, \(V\) is the volume the gas occupies, \(T\) is the temperature, and \(N\) is the number of atoms/molecules in the gas(\(N=nN_{A}\)).
+
+\subsubsection{Work and P-V Diagrams}
+Work done on a gas: \(\displaystyle W_{on}=-\int_{V_{i}}^{V_{f}}P\mathrm{d}V\)\\*
+The work done on a gas in a quasi-static process that takes the gas from an initial state to a final state is the negative of the area under the curve on a \(P-V\) diagram, evaluated between the initial and final states.\\*
+One consequence of this is that the work is path dependent.\\*
+Energy transfer by heat to the gas is also path dependent.\\*
+However, their sum (\(W_{on}+Q\)) is path independent. This is the internal energy of the system (\(U\)) and can be expressed by different conventions,\\*
+\(\Delta U=Q-W_{by}=Q+W_{on}\), where \(W_{by}\) is work done \emph{by} the system and \(W_{on}\) is work done \emph{on} the system\\*
+(I remember the signs by thinking that \(W_{by}\) is energy \emph{given up} by the system and \(W_{on}\) is energy \emph{given to} the system)\\\\*
+%
+The internal energy of an \emph{ideal gas} depends only on the temperature.\\*
+The internal energy (\(U\)) of an isolated system remains constant (conservation of energy).\\\\*
+%
+Review how to read \(P-V\) diagrams.\\\\*
+%
+Various processes:
+\begin{itemize}
+\item Cyclic: \(\Delta U=0\rightarrow Q=-W_{on}\)\\*
+Net work done on the system per cycle equals the area enclosed by the path representing the process on a \(P-V\) diagram (sign depends on direction and whether you are considering \(W_{by}\) or \(W_{on}\))
+\item Adiabatic: \(Q=0 \rightarrow \Delta U=W_{on}\)\\*
+In the adiabatic free expansion of a gas, the initial and final energies are equal.
+\item Isobaric: \(W_{on}=-P\int_{V_{i}}^{V_{f}}\mathrm{d}V=-P(V_f-V_i)\)
+\item Isovolumetric: \(W=0\rightarrow\Delta U=Q\)
+\item Isothermal: \(\Delta T=0\)
+\end{itemize}
+
+\subsection{Second Law of Thermodynamics}
+There are several different ways of stating the second law of thermodynamics. Here are a few:
+\begin{itemize}
+\item It is impossible to construct a heat engine that, operating in a cycle, produces no effect other than the input of energy by heat from a reservoir and the performance of an equal amount of work.
+\item It is impossible to construct a cyclical machine whose sole effect is to transfer energy continuously by heat from one object at a higher temperature without the input of energy by work.
+\item The total entropy of any isolated thermodynamic system tends to increase over time and approaches a maximum value.
+\item When two objects at different temperatures are placed in thermal contact with each other, the net transfer of energy by heat is always from the warmer object to the cooler object, never from cooler to warmer.
+\end{itemize}
+
+\subsubsection{Entropy}
+\(\displaystyle S=\int_i^f{\frac{\dbar Q_{rev}}{T}}\)
+
+\subsubsection{Heat Capacity \& Heat}
+Constant volume: \(\displaystyle C_V=T\left(\frac{\partial S}{\partial T}\right)_V\)\\*
+Constant pressure: \(\displaystyle C_P=T\left(\frac{\partial S}{\partial T}\right)_P\)\\*
+\(C_P>C_V\): When we add energy to a gas by heat at constant pressure, not only does the internal energy of the gas increase, but work is done on the gas due to the change in volume\\\\*
+%
+Heat in terms of heat capacity:\\*
+\(Q=nC_V\Delta T \rightarrow W=0\)\\*
+\(Q=nC_P\Delta T \rightarrow W=-\int_i^f{P\mathrm{d}V}\neq0\)\\\\*
+%
+Adiabatic process for an ideal gas:\\*
+\(\displaystyle\gamma=\frac{C_P}{C_V}>1\)\\*
+\(PV^{\gamma}=const.\)\\*
+\(TV^{\gamma-1}=const.\)\\\\*
+%
+Adiabatic free expansion process for an ideal gas:\\*
+\(Q=0\) and \(W_{by}=0\)\\*
+Hence, \(\Delta U=0 \rightarrow\Delta T=0\)\\*
+\(\displaystyle\Delta S=\int_{i}^{f}\frac{\dbar Q_{rev}}{T}=\frac{1}{T}\int_{i}^{f}\dbar Q_{rev}=\frac{1}{T}W_{rev}=\frac{1}{T}\int_{i}^{f}P\mathrm{d}V=nR\ln{\frac{V_f}{V_i}}\)\\\\*
+Entropy change for a calorimetric process:\\*
+\(Q_{cold}=-Q_{hot}\)
+
+\subsubsection{Engines and Heat Pumps}
+Engines:\\*
+Heat from a hot reservoir enters the engine (\(Q_h\)) and the engine produces work (\(W_{eng}\)) and heat that is transfered to a cold reservoir (\(Q_c\)).\\\\*
+From conservation of energy: \(\left|Q_h\right|=W_{eng}+\left|Q_c\right|\rightarrow W_{eng}=\left|Q_h\right|-\left|Q_c\right|\)\\\\*
+Efficiency: \(\displaystyle\eta=\frac{W_{eng}}{\left|Q_h\right|}=1-\frac{\left|Q_c\right|}{\left|Q_h\right|}\)\\\\*
+Carnot Engine: most efficient engine possible\\*
+Carnot's Theorem: No real heat engine operating between two energy reservoirs can be more efficient than a Carnot engine operating between the same two reservoirs (all real engines are less efficient than the Carnot engine because they do not operate through a reversible cycle).\\\\*
+Carnot Cycle (for an ideal gas):
+\begin{enumerate}
+\item Isothermal Expansion: \(\Delta U=\left|Q_h\right|+W_{on}=0\)
+\item Adiabatic Expansion: from \(T_h\) to \(T_c\), \(\Delta U=W_{on}\)
+\item Isothermal Compression: \(\Delta U=\left|Q_c\right|+W_{on}=0\)
+\item Adiabatic Compression: from \(T_c\) to \(T_h\), \(\Delta U=W_{on}\)
+\end{enumerate}
+Efficiency: \(\displaystyle\eta=1-\frac{T_c}{T_h}\)\\*
+Run this cycle in reverse for a heat pump.\\\\*
+Otto Cycle: \(\displaystyle\eta=1-\left(\frac{V_2}{V_1}\right)^{\gamma-1}\), where \(\displaystyle\left(\frac{V_2}{V_1}\right)\) is the compression ratio\\*
+This cycle is used for piston engines.\\\\*
+%
+Heat Pumps (heaters/refrigerators):\\*
+Heat from a cold reservoir (\(Q_c\)) and work (\(W_{eng}\)) enters the engine and heat is transfered to a hot reservoir (\(Q_h\)).\\\\*
+Coefficient of performance (COP):\\*
+Heaters: \(\displaystyle \frac{\left|Q_h\right|}{W_{eng}}\)\\*
+Refrigerators: \(\displaystyle \frac{\left|Q_c\right|}{W_{eng}}\)\\\\*
+%
+Review diagrams for each process.
+
+\subsubsection{Thermodynamic Definitions \& Maxwell's Equations}
+Internal energy: \(U(S,V)\)\\*
+\(\mathrm{d}U=T\mathrm{d}S-P\mathrm{d}V\) (for work done \emph{by} the system)\\*
+Helmholtz free energy: \(F(T,V)\)\\*
+\(F=U-TS\rightarrow\mathrm{d}F=-S\mathrm{d}T-P\mathrm{d}V\)\\*
+Enthalpy: \(H(S,P)\)\\*
+\(\mathrm{d}H=T\mathrm{d}S+V\mathrm{d}P\)\\*
+Gibbs free energy: \(G(T,P)\)\\*
+\(G=H-TS\rightarrow\mathrm{d}G=-S\mathrm{d}T+V\mathrm{d}P\)\\\\*
+Using these definitions and simply playing with differentials, one can derive Maxwell's Equations:
+\begin{eqnarray}
+\displaystyle \left(\frac{\partial P}{\partial T}\right)_V&=&\left(\frac{\partial S}{\partial V}\right)_T \nonumber\\
+\displaystyle \left(\frac{\partial V}{\partial T}\right)_P&=&-\left(\frac{\partial S}{\partial P}\right)_T \nonumber\\
+\displaystyle \left(\frac{\partial T}{\partial V}\right)_S&=&-\left(\frac{\partial P}{\partial S}\right)_V \nonumber\\
+\displaystyle \left(\frac{\partial V}{\partial S}\right)_P&=&\left(\frac{\partial T}{\partial P}\right)_S \nonumber
+\end{eqnarray}
+
+\subsection{Third Law of Thermodynamics (Nernst's theorem)}
+The entropy of a system at absolute zero is a well-defined constant.
+For perfect crystals, this constant is zero provided there is only one unique ground state.
+This is a results from statistical mechanics (\(\displaystyle S=k_{B}\ln\Omega\)).

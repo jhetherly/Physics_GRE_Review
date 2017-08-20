@@ -1,0 +1,100 @@
+%LaTeX file for Physics GRE review
+
+%Preamble
+\documentclass[twoside]{article}
+\usepackage{calligra}
+\usepackage{times}
+\usepackage[geometry]{ifsym}
+\usepackage[left=5cm,right=5cm, top=3cm,bottom=3cm]{geometry}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=blue,
+    urlcolor=black
+}
+
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+
+%Macros
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+\newcommand{\scriptr}{\ensuremath{\scripty{r}\hspace{2pt}}}
+\newcommand{\dbar}{\ensuremath{\mathchar'26\mkern-12mu d}}
+%\newcommand{\christoffel}[3][i]{\ensuremath{\Gamma^{#1#2}_{#3}}} % use: \christoffel[s]{k}{m}
+
+%Document
+\begin{document}
+
+\title{A Concise Review of Undergraduate Physics in Preparation for the Physics GRE}
+\author{Jeffrey Hetherly}
+\date{\today}
+\maketitle
+\thispagestyle{empty}
+
+\newpage
+%Format fancy header and footer
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\pagestyle{fancyplain}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+\fancyhead[CE]{\leftmark}
+\fancyhead[CO]{Jeffrey Hetherly}
+\fancyfoot[LO, RE]{\thepage}
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+\newpage
+%\section*{Introduction}
+%Format fancy header and footer
+\fancyhf{}
+\setlength{\headheight}{15pt}
+\pagestyle{fancyplain}
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0.1pt}
+
+\fancyhead[CO]{\leftmark}
+\fancyhead[CE]{Jeffrey Hetherly}
+\fancyfoot[LE, RO]{\thepage}
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{src/intro.tex}
+
+\newpage
+\input{src/classical_mech.tex}
+
+\newpage
+\input{src/em.tex}
+
+\newpage
+\input{src/quantum_mech.tex}
+
+\newpage
+\input{src/thermo.tex}
+
+\newpage
+\input{src/stat_mech.tex}
+
+\newpage
+\input{src/modern_phys.tex}
+
+\newpage
+\input{src/lab_methods.tex}
+
+\newpage
+\input{src/math.tex}
+
+\end{document}

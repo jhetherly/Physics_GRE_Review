@@ -1,0 +1,330 @@
+\section{Modern Physics}
+This is a large section and covers a variety of subjects that the PGRE splits up into multiple topics.
+These sections try to stick to only what is covered on the practice tests because they are very deep topics.
+In total, this section is worth about 25\% of the problems on the test.
+
+\subsection{Special Relativity}
+Be sure to understand proper length and time.
+Visualizing the different reference frames is also extremely helpful.
+
+\subsubsection{Postulates}
+\begin{enumerate}
+\item The laws of physics must be the same in all inertial reference frames.
+\item The speed of light in vacuum has the same value in all inertial reference frames.
+\end{enumerate}
+
+\subsubsection{Basics}
+\(\displaystyle\beta=\frac{v}{c}\le1\)\\*
+Lorentz factor: \(\displaystyle\gamma=\frac{1}{\sqrt{1-\beta^2}}\ge1\)\\*
+Invariance of the space-time interval: \(c\mathrm{d}t'-\mathrm{d}x'-\mathrm{d}y'-\mathrm{d}z'=c\mathrm{d}t-\mathrm{d}x-\mathrm{d}y-\mathrm{d}z\)
+
+\subsubsection{Length Contraction}
+\(\displaystyle L'=\frac{L_{proper}}{\gamma}\)
+
+\subsubsection{Time Dilation}
+\(t'=\gamma t_{proper}\)
+
+\subsubsection{Relativistic Doppler Effect \& Redshift}
+Doppler factor: \(\displaystyle \frac{\lambda_{observer}}{\lambda_{source}}=\sqrt{\frac{1\pm\beta}{1\mp\beta}}\)\\*
+Redshift: \(\displaystyle z=\frac{\lambda_{observer}-\lambda_{source}}{\lambda_{source}}=\sqrt{\frac{1\pm\beta}{1\mp\beta}}-1\)\\\\*
+choose the top set of signs when the observer and source are moving \emph{away} from each other, choose the bottom set of signs when they are moving \emph{toward} each other
+
+\subsubsection{Momentum and Energy}
+\(p=\frac{E}{c}\) for massless particles\\*
+\(\mathbf{p}=\gamma m\mathbf{v}\) for massive particles\\*
+In general: \(p=\frac{1}{c}\sqrt{E^2-\left(mc^2\right)^2}\)\\*
+Newton's second law is still valid in the form: \(\displaystyle \mathbf{F}=\frac{\mathrm{d}\mathbf{p}}{\mathrm{d}t}\)\\\\*
+%
+\(E=\sqrt{\left(mc^2\right)^2+\left(pc\right)^2}=\gamma mc^2=K+mc^2\)\\*
+\(K=E-mc^2=mc^2\left(\gamma-1\right)\)\\*
+\(p=\sqrt{\left(\frac{K}{c}\right)^2+2mK}\)\\*
+Mass-energy relationship: \(\displaystyle E_i=\frac{m_ic^2}{\sqrt{1-\left(\frac{u_i}{c}\right)^2}}=\gamma_im_ic^2\)
+
+\subsubsection{Lorentz Transformation}
+For motion along the \(x\)-axis:\\*
+\(\lambda=\left[\!
+  \begin{array}{ c c c c }
+     \gamma & -\beta\gamma & 0 & 0 \\
+     -\beta\gamma & \gamma & 0 & 0 \\
+     0 & 0 & 1 & 0 \\
+     0 & 0 & 0 & 1
+  \end{array} \!\right]\)\\*
+ \(\lambda^{-1}=\left[\!
+  \begin{array}{ c c c c }
+     \gamma & \beta\gamma & 0 & 0 \\
+     \beta\gamma & \gamma & 0 & 0 \\
+     0 & 0 & 1 & 0 \\
+     0 & 0 & 0 & 1
+  \end{array} \!\right]\)\\*
+\begin{eqnarray}
+\mathbf{x}'&=&\lambda\mathbf{x} \nonumber\\
+ct'&=&\gamma\left(ct-\beta x\right) \nonumber\\
+x'&=&\gamma\left(-\beta ct+x\right) \nonumber\\
+y'&=&y \nonumber\\
+z'&=&z \nonumber
+\end{eqnarray}
+
+\subsubsection{Velocity Addition}
+If \(v\) is along \(x\)-axis:\\*
+\begin{eqnarray}
+\displaystyle u_x'&=&\frac{u_x-v}{1-\frac{u_xv}{c^2}}\nonumber\\
+\displaystyle u_y'&=&\frac{u_y}{\gamma\left(1-\frac{u_xv}{c^2}\right)}\nonumber\\
+\displaystyle u_z'&=&\frac{u_z}{\gamma\left(1-\frac{u_xv}{c^2}\right)}\nonumber
+\end{eqnarray}
+To go from the primed coordinates to unprimed:\\*
+\(\displaystyle u_x=\frac{u_x'+v}{1+\frac{u_x'v}{c^2}}\)\\\\*
+Although you should memorize these, deriving them from the Lorentz transform isn't difficult (but maybe too time consuming for the PGRE):
+\begin{eqnarray}
+\displaystyle u_x'&=&\frac{\mathrm{d}x'}{\mathrm{d}t'} \nonumber\\
+\displaystyle \mathrm{d}x'&=&\gamma\left(\mathrm{d}x-v\mathrm{d}t\right) \nonumber\\
+\displaystyle \mathrm{d}t'&=&\gamma\left(\mathrm{d}t-\frac{v}{c^2}\mathrm{d}x\right) \nonumber\\
+\displaystyle u_x'&=&\frac{\mathrm{d}x-v\mathrm{d}t}{\mathrm{d}t-\frac{v}{c^2}\mathrm{d}x} \nonumber\\
+\displaystyle &=& \frac{(\mathrm{d}x/\mathrm{d}t)-v}{1-\frac{v}{c^2}(\mathrm{d}x/\mathrm{d}t)} \nonumber\\
+\displaystyle &=& \frac{u_x-v}{1-\frac{u_xv}{c^2}}\nonumber
+\end{eqnarray}
+Derivations for \(u_y'\), \(u_z'\), and going from the primed to unprimed coordinates follow similar logic.
+
+\subsubsection{Completely Inelastic Collisions}
+Suppose \(m_1\) and \(m_2\) collide inelastically to form \(m_3\):\\\\*
+\(\displaystyle m_3=\frac{\gamma_1 m_1+\gamma_2 m_2}{\gamma_3}\) \\*
+\(\displaystyle \Delta m=m_3-(m_1+m_2)=\frac{K_1+K_2-K_3}{c^2}\)\\*
+These are easily derived from conservation of energy.
+
+\subsection{Atomic Physics}
+
+\subsubsection{Notation}
+Know how to write out the electron orbitals in \((nl)^N\) notation.\\*
+E.g. \(Z=11\) for sodium. The orbitals for the ground state are \((1s)^2(2s)^2(2p)^6(3s)^1\)\\*
+\(s\)=sharp: \(l=0\) (can hold 2 electrons)\\*
+\(p\)=principle: \(l=1\) (can hold 6 electrons)\\*
+\(d\)=diffuse: \(l=2\) (can hold 10 electrons)\\*
+\(f\)=fundamental: \(l=3\) (can hold 14 electrons)\\*
+(remember \((4s)\) comes before \((3d)\))\\\\*
+ETS also likes the \(^{2S+1}L_J\) notation for atoms. Hund's rules are employed in filling this out correctly.
+Taking time to learn and \emph{practice} this is worthwhile because these questions are typically easy enough to do in thirty seconds or less.\\\\*
+\(L\)= total orbital angular momentum\\*
+\(S\)= total spin\\*
+\(J\)= grand total angular momentum\\*
+Hund's Rules:
+\begin{enumerate}
+\item Considering the Pauli principle, the state with the highest spin (\(+\frac{1}{2}\)) has the lowest energy.
+\item Considering the Pauli principle, the state with the highest \(L\) has the lowest energy.
+\item If a shell is more than half filled, use \(J=S+L\), otherwise use \(J=|S-L|\).
+\end{enumerate}
+Also, filled shells don't count when constructing this notation.
+
+\subsubsection{Energy and Wavelength of Emitted Photons}
+For hydrogen-like atoms:\\*
+Energy: \(\displaystyle E_{\gamma}=E_1\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right)\) where \(E_1\approx 13.6\mathrm{eV}\)\\\\*
+Wavelength: \(\displaystyle \frac{1}{\lambda}=R\left(\frac{1}{n_f^2}-\frac{1}{n_i^2}\right)\) where \(R\approx 10^7 m^{-1}\)\\\\*
+Lyman series: \(n_f=1\) (ultraviolet)\\*
+Balmer series: \(n_f=2\) (visible)\\*
+Pashen series: \(n_f=3\) (infrared)\\*
+Look at the hydrogen atom subsection in the Quantum Mechanics section to see how to alter \(E_1\) and \(R\) for positronium and helium (or other elements with higher \(Z_2\)).\\\\*
+For heavy elements: \(\displaystyle E_n=\frac{-13.6(eV)Z_{eff}^2}{n^2}\), where \(Z_{eff}\) is the \emph{effective} charge the electron sees.\\\\*
+%
+Emitted X-Rays:\\*
+K shell (\(n=1\)): \(\displaystyle E_K\approx-13.6\left(Z-1\right)^2\)\\*
+L shell (\(n=2\)): \(\displaystyle E_L\approx-13.6\frac{\left(Z-1\right)^2}{4}\)\\*
+M shell (\(n=3\)): \(\displaystyle E_M\approx-13.6\frac{\left(Z-9\right)^2}{9}\)\\*
+\(K_\alpha\) line is from \(L\rightarrow K\): \(E_K-E_L\)\\*
+\(K_\beta\) line is from \(M\rightarrow K\): \(E_K-E_M\)\\*
+\(L_\alpha\) line is from \(M\rightarrow L\): \(E_L-E_M\)
+
+\subsubsection{Bohr Model}
+Radius: \(a_n\approx.53\mathrm{\text{\AA}} \left(\frac{n^2}{m_eZ}\right)\)\\*
+Energy: \(E_n\approx13.6eV\left(\frac{m_eZ^2}{n^2}\right)\)
+
+\subsubsection{Ionization}
+An ion is an atom with one or more extra/missing electrons.
+Knowing this, it is easy to construct a general formula for the ionization energy of an atom with atomic number \(Z_a\):\\*
+\(E_{total}=E_{1^{st}}+E_{2^{nd}}+\ldots+E_{n^{th}}\), where \(E_{n^{th}}\) is the \(n^{th}\) ionization energy\\*
+It is important to note that if one removes \(Z_a-1\) electrons from an atom, the formula for the energy of the electron is the same as hydrogen except that \(Z_2=Z_a\) (\(Z_2\) is defined in the quantum mechanics section).
+
+\subsubsection{Selection Rules}
+Electric dipole transitions:\\*
+\(\Delta l=\pm1\)\\*
+\(\Delta m_l=0,\pm1\)\\*
+\(\Delta j=0,\pm1\)\\*
+\(\Delta m_s=0\)
+
+\subsubsection{Gyromagnetic Ratio}
+Magnetic Moment: \(\vec{\mu}=\gamma\mathbf{S}\)\\*
+\(\displaystyle\gamma = \frac{qg}{2m}\) where \(q\) is the charge and \(g\) is the Lande \(g\)-factor
+
+\subsection{Energy States \& Spectra of Molecules}
+\(E=E_{el}+E_{trans}+E_{rot}+E_{vib}\)\\\\*
+For diatomic molecules:\\*
+\(E_{rot}=\frac{\hbar^2}{2I}J(J+1)\)\\*
+\(\Delta E_{rot}=E_J-E_{J-1}=\frac{\hbar^2}{I}J\)\\*
+\(E_{vib}=(n+\frac{1}{2})\hbar\omega\), where \(n=0,1,2, \ldots\), \(\omega = \sqrt{\frac{k}{\mu}}\), and \(\mu\) is the reduced mass of the molecule\\*
+\(\Delta E_{vib}=\hbar\omega\)
+
+\subsection{Radioactivity}
+\(\displaystyle \frac{\mathrm{d}N}{\mathrm{d}t}=-\lambda N\rightarrow N=N_0 e^{-\lambda t}\), where \(\lambda\) is the decay constant and \(N\) is the number of particle left\\*
+Decay rate (activity): \(\displaystyle \left|\frac{\mathrm{d}N}{\mathrm{d}t}\right|=R=\lambda N\rightarrow R=R_0 e^{-\lambda t}\)\\*
+Half-life: \(\displaystyle t_{1/2}=\frac{\ln{2}}{\lambda}\rightarrow N=\frac{N_0}{2}\)
+
+\subsection{Nuclear Physics}
+
+\subsubsection{Radius of Nucleus}
+\(r=r_0A^{1/3}\), where \(A\) is the number of nucleons and \(r_0=1.2(fm)\)
+
+\subsubsection{Strong Force}
+This is the strongest of the four fundamental forces.
+It is independent of charge, very short range, and its magnitude depends on the relative spin orientations.
+
+\subsubsection{Nuclear Magneton}
+\(\mu_m\equiv\frac{e\hbar}{2m_p}\approx5\times10^{-27}(J/T)\)
+
+\subsubsection{Fission}
+Fission is the process whereby a large nucleus is split into smaller pieces (other nuclei and subatomic particles).
+This process releases a large amount of energy (disintegration energy).\\*
+Disintegration energy: \(\displaystyle Q=\left(M_n-\left(\sum_iM_i\right)\right)c^2=\Delta mc^2\), where \(M_n\) is the mass of the nucleus before the split and \(M_i\) is the mass of product \(i\)
+
+\subsubsection{Fusion}
+Fusion is the process of smashing atoms and/or particles together to create heavier nuclei.
+This releases even more energy (per product) than fission.
+The energy released is the binding energy of the resultant nucleus.\\\\*
+Binding energy: \(\displaystyle E_B=\sum_i{m_ic^2}-Mc^2\), where \(m_i\) is the mass of the free component atom/particle \(i\) and \(M\) is the mass of the bound system
+
+\subsection{Particle Physics}
+
+\subsubsection{Types of Particles}
+Hadrons: particles that interact through the strong force\\*
+Examples:\\*
+Mesons: zero or integer spin (pions (\(\pi^+\), \(\pi^-\), and \(\pi^0\)) all have zero spin)\\*
+Baryons: half-integer spin (protons and neutrons have half-integer spin)\\\\*
+Leptons: particles that do not interact by means of the strong force\\*
+Only twelve exist: \(e\), \(\mu\), \(\tau\), \(\nu_e\), \(\nu_{\mu}\), \(\nu_{\tau}\) (and their anti-particle counterparts)
+
+\subsubsection{Alpha Decay}
+\(\,^A_ZX\rightarrow \,^{A-4}_{Z-2}Y+\,^4_2He\)
+
+\subsubsection{Beta Decay}
+\(\,^A_ZX\rightarrow \,^{\hspace{.35cm}A}_{Z+1}Y+e^-+\bar{\nu}_e\) (electron and anti-electron-neutrino)\\*
+\(\,^A_ZX\rightarrow \,^{\hspace{.35cm}A}_{Z-1}Y+e^++\nu_e\) (positron and electron-neutrino)\\\\*
+%
+Examples:\\*
+\(n\rightarrow p+e^-+\bar{\nu}_e\)\\*
+\(p\rightarrow n+e^++\nu_e\)
+
+\subsubsection{Gamma Decay}
+\(\,^A_ZX^*\rightarrow \,^A_ZX+\gamma\)\\\\*
+%
+Example (two-part decay):\\*
+\(\,^{12}_{\hspace{.15cm}5}B\rightarrow \,^{12}_{\hspace{.15cm}6}C^*+e^-+\bar{\nu}_e\)\\*
+\(\,^{12}_{\hspace{.15cm}6}C^*\rightarrow \,^{12}_{\hspace{.15cm}6}C+\gamma\)
+
+\subsubsection{Particle Decay}
+\(\pi^-\rightarrow\mu+\bar{\nu}_{\mu}\)\\*
+\(\mu\rightarrow e+\bar{\nu}_e+\nu_e\)
+
+\subsubsection{Neutron Capture}
+\(\,^1_0n+\,^A_ZX\rightarrow\,^{A+1}_{\hspace{.35cm}Z}X^*\rightarrow\,^{A+1}_{\hspace{.35cm}Z}X+\gamma\)
+
+\subsubsection{Pair-Production}
+A \(\gamma\)-ray photon with sufficiently high energy interacts with a nucleus, and an electron-positron pair is created.\\*
+\(E_{\gamma}\ge1(MeV)\)\\*
+Due to conservation of momentum, two \(\gamma\)-rays are created at annihilation:\\*
+\(e^++e^-\rightarrow2\gamma\)
+
+\subsubsection{Conservation Laws}
+Baryon number:\\*
+\(+1\) for baryons\\*
+\(-1\) for anti-baryons\\*
+\(0\) for all others\\\\*
+Lepton number:\\*
+\(+1\) for  \(e\), \(\mu\), \(\tau\), \(\nu_e\), \(\nu_{\mu}\), \(\nu_{\tau}\)\\*
+\(-1\) for  \(\bar{e}\), \(\bar{\mu}\), \(\bar{\tau}\), \(\bar{\nu}_e\), \(\bar{\nu}_{\mu}\), \(\bar{\nu}_{\tau}\)\\*
+\(0\) for all others\\\\*
+Strangeness:\\*
+In a nuclear reaction or decay that occurs via the strong force, strangeness is conserved.\\*
+In processes that occur via the weak interaction, strangeness may not be conserved.
+
+\subsection{Devices}
+
+\subsubsection{The Laser}
+LASER stands for: Light Amplification by Stimulated Emission of Radiation
+\begin{itemize}
+\item The emitted light is coherent (same phase)
+\item The emitted light is nearly monochromatic (one wavelength)
+\item Minimal divergence
+\item Highest intensity of any light source
+\end{itemize}
+The majority of an assembly of atoms is brought to an excited state through ``population inversion.''\\*
+``Population inversion'' can be achieved through ``optical pumping'' where atoms are exposed to a given wavelength of light.
+This wavelength is enough to excite the atoms just above the metastable level.
+The atoms rapidly lose energy and fall to the metastable level.
+``Induced emission'' occurs when the atom goes from the metastable state to the ground state (this is what produces the light).
+
+\subsubsection{Michelson Interferometer}
+This devise takes advantage of the difference in path length by two different beams of light.\\*
+For a basic interferometer, the equations for constructive and destructive interference are:
+\begin{itemize}
+\item Constructive: \(2\Delta d=m\lambda\) where \(m=0,\pm1,\pm2,\ldots\)
+\item Destructive: \(2\Delta d=(m+\frac{1}{2})\lambda\) where \(m=0,\pm1,\pm2,\ldots\)
+\end{itemize}
+\(\Delta d\) is the distance the moveable arms travels and \(m\) is the number of fringes produced.
+These equations are easily derived by looking at the path difference for the two beams of light and noting the condition for constructive and destructive interference.
+ETS likes to modify the apparatus slightly, but the general concept remains the same.
+Typically, when the number of fringes is specified one typically needs the constructive interference equation.
+
+\subsection{Important Effects}
+
+\subsubsection{Photoelectric Effect}
+Important result: Light incident on a metallic surface causes electrons to be emitted from the surface with a kinetic energy of \(K_{max}=e\Delta V_s=h\nu-\phi\), where \(\phi\) is the work function of the metal (represents the minimum energy with which an electron is bound to the metal).\\*
+When \(\Delta V<0\) there is a ``stopping voltage (\(\Delta V_s\))'' where the electrons haven't enough energy to overcome the potential, hence no current is established.
+\begin{itemize}
+\item Classically: electrons should absorb energy continuously and kinetic energy should rise with light intensity\\*
+Observed: \(K_{max}\) depends on \(\Delta V_s\)
+\item Classically: at low intensities a buildup time should be observed\\*
+Observed: almost instantaneous emission of electron even at very low intensities
+\item Classically: electron should be ejected for all frequencies and only depend on intensity\\*
+Observed: no electrons are emitted below a certain cutoff frequency (\(f_c=\frac{\phi}{h}\))
+\item Classically: kinetic energy should only depend on intensity, not frequency of light\\*
+Observed: \(K_{max}\) increases with light frequency
+\end{itemize}
+Review the schematic for this device.
+
+\subsubsection{Compton Effect}
+Describes the shift in wavelength for light scattered from particles.\\*
+\(\Delta\lambda=\frac{h}{cm}\left(1-\cos{\theta}\right)=\lambda_C\left(1-\cos{\theta}\right)\), where \(\theta\) is the scattering angle and \(\lambda_C\) is the Compton wavelength
+
+\subsubsection{Spectrum Line-Splitting}
+
+Zeeman effect: When you apply a uniform external magnetic field, each transition energy (\(E_{n_1,l_1\rightarrow n_2,l_2}\)) it splits into three equally-spaced lines, due to whether \(m_l\) increases by one, decreases by one, or stays the same in the transition.\\\\*
+Anomalous Zeeman effect: In the Zeeman effect, the contribution of electron spin to the total angular momentum means that there aren't always three lines and they are not always equally spaced.\\\\*
+Stark effect: When you apply a uniform electric field, it induces a dipole moment in the atoms and the field in turn interacts with the dipole moment. The effect depends on \(|m_j|\). If \(j\) is an integer, it splits into \(j+1\) levels. If \(j\) is a half-integer, it splits into \(j+\frac{1}{2}\) levels.\\\\*
+Stern-Gerlach experiment: Atoms are sent through a nonuniform magnetic field and are split into \(2S+1\) beams, where \(S\) is the spin of the atom.\\*
+This experiment verified space quantization exists (spin).
+
+\subsubsection{X-Ray Spectra}
+``Auger transition'' (internal conversion): When an incoming particle knocks out an inner-shell electron (and that vacancy gets filled by an outer-shell electron), a spike in the spectrum is created\\*
+``Bremsstrahlung'' (braking radiation): This is the continuos spectrum of light released by the deceleration of an electron.\\\\*
+Together, these effects create a spectrum that is continuos with a few spikes.
+
+\subsubsection{Light-Matter Interaction Energy Levels}
+Low-energy: Photoelectric effect\\*
+Mid-energy: Compton effect\\*
+High-energy: Pair-production (\(\gamma\rightarrow e^-+e^+\))
+
+\subsubsection{Superconductivity}
+A superconductor is conductor with no resistance to the flow of electric current.
+It is a perfect diamagnet having a negative magnetic susceptibility.
+The magnetic flux in a superconductor cannot change (\(\frac{\partial\Phi_B}{\partial t}=0\)).\\*
+Meissner effect: a superconductor repels a permanent magnet.
+
+\subsection{Cosmology}
+
+\subsubsection{Hubble's Law}
+\(v=HR\)\\*
+Hubble's constant: \(H\approx17\times10^{-3} (m/s\cdot ly)\)\\*
+\(v\) is the velocity of the galaxy\\*
+\(R\) is the distance from Earth
+
+\subsubsection{Black Holes}
+Radius of a black hole: \(\displaystyle R=\frac{2GM}{c^2}\)\\\\*
+You may realize that this is identical to the Newtonian escape velocity formula with \(v=c\).
+By all accounts, this is dumb luck that it can be related to Newtonian gravity as space-time around a black hole must be handled with general relativity.
+However, it is helpful to remember this relation as most (all?) students haven't formally studied general relativity yet.
